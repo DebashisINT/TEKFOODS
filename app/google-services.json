@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "111382040577",
+    "project_id": "tekfoods-3dc0d",
+    "storage_bucket": "tekfoods-3dc0d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:111382040577:android:2af5791db2f52180e2b000",
+        "android_client_info": {
+          "package_name": "com.tekfoods"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "111382040577-gjnrc5u6kqjkq880rrm1ndidm1euiin4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAr-KGf1-4YHoN2WisU1ARYRnXsn-1CLKA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "111382040577-gjnrc5u6kqjkq880rrm1ndidm1euiin4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
