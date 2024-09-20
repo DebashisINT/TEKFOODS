@@ -15,15 +15,29 @@
         android:background="@drawable/rounded_corner_white_bg"
         android:orientation="vertical">
 
-        <com.tekfoods.widgets.AppCustomTextView
-            android:id="@+id/dialog_new_order_confirmed_headerTV"
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:padding="@dimen/_10sdp"
-            android:text="@string/app_name"
-            android:textColor="@color/colorPrimary"
-            android:textSize="@dimen/_15sdp" />
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:src="@drawable/ic_logo"
+                android:layout_gravity="center|start"
+                android:layout_marginLeft="@dimen/_5sdp"/>
+
+            <com.tekfoodsbreezefield.widgets.AppCustomTextView
+                android:id="@+id/dialog_new_order_confirmed_headerTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/app_name"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_15sdp" />
+
+        </FrameLayout>
 
         <View
             android:layout_width="match_parent"
@@ -33,7 +47,7 @@
             android:layout_marginLeft="@dimen/_7sdp"
             android:layout_marginRight="@dimen/_7sdp"/>
 
-        <com.tekfoods.widgets.AppCustomTextView
+        <com.tekfoodsbreezefield.widgets.AppCustomTextView
             android:id="@+id/dialog_new_order_confirmed_header_TV"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_40sdp"
@@ -57,7 +71,7 @@
             android:layout_height="@dimen/_35sdp"
             android:orientation="horizontal">
 
-            <com.tekfoods.widgets.AppCustomTextView
+            <com.tekfoodsbreezefield.widgets.AppCustomTextView
                 android:id="@+id/tv_message_no"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -68,11 +82,11 @@
                 android:focusable="true"
                 android:gravity="center"
                 android:text="No"
-                android:backgroundTint="#57a518"
+                android:backgroundTint="#f8424e"
                 android:textColor="@drawable/selector_text_clor_blue_white"
                 android:textSize="@dimen/_13sdp" />
 
-            <com.tekfoods.widgets.AppCustomTextView
+            <com.tekfoodsbreezefield.widgets.AppCustomTextView
                 android:id="@+id/tv_message_yes"
                 android:layout_marginLeft="@dimen/_2sdp"
                 android:layout_width="match_parent"
@@ -84,7 +98,7 @@
                 android:focusable="true"
                 android:gravity="center"
                 android:text="Yes"
-                android:backgroundTint="#f8424e"
+                android:backgroundTint="#57a518"
                 android:textColor="@drawable/selector_text_clor_blue_white"
                 android:textSize="@dimen/_13sdp" />
 

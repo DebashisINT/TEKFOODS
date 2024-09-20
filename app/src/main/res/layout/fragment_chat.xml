@@ -14,20 +14,20 @@
         android:layout_alignParentBottom="true"
         android:background="@color/white">
 
-        <com.tekfoods.widgets.AppCustomTextView
+        <com.tekfoodsbreezefield.widgets.AppCustomTextView
             android:id="@+id/tv_send_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:background="@drawable/selector_billing_submit_bg"
+            android:padding="@dimen/_10sdp"
             android:text="@string/send"
             android:textColor="@color/white"
             android:textSize="@dimen/_13sdp"
-            android:padding="@dimen/_10sdp"
-            android:textStyle="bold"
-            android:layout_alignParentRight="true"
-            android:layout_marginLeft="@dimen/_10sdp"
-            android:background="@drawable/selector_billing_submit_bg"/>
+            android:textStyle="bold" />
 
-        <com.tekfoods.widgets.AppCustomEditText
+        <com.tekfoodsbreezefield.widgets.AppCustomEditText
             android:id="@+id/et_msg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

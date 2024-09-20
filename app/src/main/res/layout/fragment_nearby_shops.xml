@@ -9,7 +9,6 @@
     android:background="@color/color_silver"
     android:clickable="true">
 
-
     <RelativeLayout
         android:id="@+id/wraper"
         android:layout_width="match_parent"
@@ -26,7 +25,7 @@
             android:gravity="center"
             android:padding="@dimen/_10sdp">
 
-            <com.tekfoods.widgets.AppCustomTextView
+            <com.tekfoodsbreezefield.widgets.AppCustomTextView
                 android:id="@+id/no_of_shop_TV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -38,7 +37,7 @@
                 android:textSize="@dimen/_16sdp"
                 android:textStyle="normal" />
 
-            <com.tekfoods.widgets.AppCustomTextView
+            <com.tekfoodsbreezefield.widgets.AppCustomTextView
                 android:id="@+id/min_TV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -52,7 +51,7 @@
                 android:textSize="@dimen/_10sdp"
                 android:textStyle="normal" />
 
-            <com.tekfoods.widgets.AppCustomTextView
+            <com.tekfoodsbreezefield.widgets.AppCustomTextView
                 android:id="@+id/avg_shop_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -73,7 +72,7 @@
             android:layout_marginBottom="-20dp"
             android:padding="@dimen/_6sdp">
 
-            <com.tekfoods.widgets.AppCustomTextView
+            <com.tekfoodsbreezefield.widgets.AppCustomTextView
                 android:id="@+id/username_TV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -118,7 +117,7 @@
 
     </androidx.cardview.widget.CardView>
 
-    <com.tekfoods.widgets.AppCustomTextView
+    <com.tekfoodsbreezefield.widgets.AppCustomTextView
         android:id="@+id/tv_shop_count"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -131,7 +130,18 @@
         android:layout_marginTop="@dimen/_10sdp"
         android:visibility="gone"/>
 
-    <com.tekfoods.widgets.AppCustomTextView
+    <ImageView
+        android:id="@+id/iv_frag_nearby_shops_mic"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_17sdp"
+        android:layout_alignParentRight="true"
+        app:tint="@color/color_custom_red"
+        android:visibility="gone"
+        android:src="@drawable/ic_mic"/>
+
+    <com.tekfoodsbreezefield.widgets.AppCustomTextView
         android:id="@+id/tv_beat_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -144,14 +154,27 @@
         android:visibility="gone"
         android:layout_below="@+id/tv_shop_count"/>
 
+    <com.tekfoodsbreezefield.widgets.AppCustomTextView
+        android:id="@+id/tv_geofence_relax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/_11sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:visibility="gone"
+        android:layout_below="@+id/tv_beat_name"/>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/near_by_shops_RCV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tv_beat_name"
+        android:layout_below="@id/tv_geofence_relax"
         android:overScrollMode="never" />
 
-    <com.tekfoods.widgets.AppCustomTextView
+    <com.tekfoodsbreezefield.widgets.AppCustomTextView
         android:id="@+id/no_shop_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

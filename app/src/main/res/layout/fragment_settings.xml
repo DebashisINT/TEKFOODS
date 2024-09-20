@@ -30,14 +30,14 @@
                 android:orientation="vertical"
                 android:padding="@dimen/_10sdp">
 
-                <com.tekfoods.widgets.AppCustomTextView
+                <com.tekfoodsbreezefield.widgets.AppCustomTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/auto_start_msg"
                     android:textColor="@color/black"
                     android:textSize="@dimen/_12sdp" />
 
-                <com.tekfoods.widgets.AppCustomTextView
+                <com.tekfoodsbreezefield.widgets.AppCustomTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/auto_start_note"
@@ -79,7 +79,7 @@
                 android:orientation="vertical"
                 android:padding="@dimen/_10sdp">
 
-                <com.tekfoods.widgets.AppCustomTextView
+                <com.tekfoodsbreezefield.widgets.AppCustomTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/overlay_permission"
@@ -122,7 +122,7 @@
                 android:orientation="vertical"
                 android:padding="@dimen/_10sdp">
 
-                <com.tekfoods.widgets.AppCustomTextView
+                <com.tekfoodsbreezefield.widgets.AppCustomTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/photo_permission"
@@ -162,7 +162,7 @@
                 android:orientation="vertical"
                 android:padding="@dimen/_10sdp">
 
-                <com.tekfoods.widgets.AppCustomTextView
+                <com.tekfoodsbreezefield.widgets.AppCustomTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/loc_permission"
@@ -203,7 +203,7 @@
                 android:orientation="vertical"
                 android:padding="@dimen/_10sdp">
 
-                <com.tekfoods.widgets.AppCustomTextView
+                <com.tekfoodsbreezefield.widgets.AppCustomTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/phone_permission"
@@ -244,7 +244,7 @@
                 android:orientation="vertical"
                 android:padding="@dimen/_10sdp">
 
-                <com.tekfoods.widgets.AppCustomTextView
+                <com.tekfoodsbreezefield.widgets.AppCustomTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/gallery_permission"
@@ -286,7 +286,7 @@
                 android:orientation="vertical"
                 android:padding="@dimen/_10sdp">
 
-                <com.tekfoods.widgets.AppCustomTextView
+                <com.tekfoodsbreezefield.widgets.AppCustomTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/audio_permission"
@@ -327,10 +327,51 @@
                 android:orientation="vertical"
                 android:padding="@dimen/_10sdp">
 
-                <com.tekfoods.widgets.AppCustomTextView
+                <com.tekfoodsbreezefield.widgets.AppCustomTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/calender_permission"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:src="@drawable/ic_play_icon"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_frag_settings_batOpti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="@dimen/_4sdp"
+        app:cardElevation="@dimen/_2sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/shape_cursor_one">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+                <com.tekfoodsbreezefield.widgets.AppCustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Advance battery optimization"
                     android:textColor="@color/black"
                     android:textSize="@dimen/_12sdp" />
             </LinearLayout>

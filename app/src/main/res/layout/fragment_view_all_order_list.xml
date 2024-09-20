@@ -61,7 +61,7 @@
                     android:layout_height="wrap_content">
 
 
-                    <com.tekfoods.widgets.AppCustomTextView
+                    <com.tekfoodsbreezefield.widgets.AppCustomTextView
                         android:id="@+id/myshop_name_TV"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -73,7 +73,7 @@
 
                 </RelativeLayout>
 
-                <com.tekfoods.widgets.AppCustomTextView
+                <com.tekfoodsbreezefield.widgets.AppCustomTextView
                     android:id="@+id/myshop_address_TV"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -83,7 +83,7 @@
                     android:textSize="@dimen/_11sdp" />
                 <!--android:text="@string/address_txt"-->
 
-                <com.tekfoods.widgets.AppCustomTextView
+                <com.tekfoodsbreezefield.widgets.AppCustomTextView
                     android:id="@+id/tv_contact_number"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -99,7 +99,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/tv_contact_number">
 
-                    <com.tekfoods.widgets.AppCustomTextView
+                    <com.tekfoodsbreezefield.widgets.AppCustomTextView
                         android:id="@+id/order_amount_tv"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -206,7 +206,7 @@
             wheel:matProg_progressIndeterminate="true" />
 
 
-        <com.tekfoods.widgets.AppCustomTextView
+        <com.tekfoodsbreezefield.widgets.AppCustomTextView
             android:id="@+id/no_shop_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -223,10 +223,13 @@
         android:id="@+id/add_order_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
         android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
         android:src="@drawable/ic_add"
         app:fabSize="normal" />
 </RelativeLayout>

@@ -61,7 +61,7 @@
                     android:textSize="@dimen/_12sdp"
                     android:textStyle="bold" />
 
-                <com.tekfoods.widgets.AppCustomTextView
+                <com.tekfoodsbreezefield.widgets.AppCustomTextView
                     android:id="@+id/tv_ta_count"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -96,6 +96,6 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_ta_list"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

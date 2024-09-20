@@ -37,6 +37,7 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:visibility="gone"
                             android:orientation="horizontal">
 
                             <ImageView
@@ -63,7 +64,7 @@
                                     android:textColorHint="@color/dark_gray"
                                     app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
 
-                                    <com.tekfoods.widgets.AppCustomEditText
+                                    <com.tekfoodsbreezefield.widgets.AppCustomEditText
                                         android:id="@+id/et_frag_add_quot_form_Quot_no"
                                         android:layout_width="match_parent"
                                         android:layout_height="@dimen/_30sdp"
@@ -117,7 +118,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content">
 
-                                <com.tekfoods.widgets.AppCustomTextView
+                                <com.tekfoodsbreezefield.widgets.AppCustomTextView
                                     android:id="@+id/tv_frag_add_quot_form_date"
                                     android:layout_width="match_parent"
                                     android:layout_height="@dimen/_30sdp"
@@ -174,7 +175,7 @@
                                 android:textColorHint="@color/dark_gray"
                                 app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
 
-                                <com.tekfoods.widgets.AppCustomEditText
+                                <com.tekfoodsbreezefield.widgets.AppCustomEditText
                                     android:id="@+id/tv_frag_add_quot_form_customer_name"
                                     android:layout_width="match_parent"
                                     android:layout_height="@dimen/_30sdp"
@@ -190,6 +191,88 @@
 
                             </com.google.android.material.textfield.TextInputLayout>
 
+
+
+
+                        </LinearLayout>
+                        <!--1.0 AddQuotFormFragment  AppV 4.0.6 addQuot contactmulti design-->
+                        <LinearLayout
+                            android:id="@+id/ll_contact"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_7sdp"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="@dimen/_25sdp"
+                                    android:layout_height="@dimen/_25sdp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:layout_marginEnd="@dimen/_5sdp"
+                                    android:gravity="center_vertical"
+                                    android:src="@drawable/ic_add_shop_owner_contact_number"
+                                    app:tint="@color/dark_gray" />
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <com.tekfoodsbreezefield.widgets.AppCustomTextView
+                                        android:id="@+id/tv_frag_add_quot_form_customer_p"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_30sdp"
+                                        android:drawableTint="@color/black"
+                                        android:hint="Select Contact Person"
+                                        android:paddingStart="@dimen/_10sdp"
+                                        android:singleLine="true"
+                                        android:textSize="@dimen/_11sdp"
+                                        android:textColor="@color/black"
+                                        android:drawableEnd="@drawable/ic_down_arrow"
+                                        android:paddingEnd="@dimen/_10sdp"
+                                        android:gravity="center|start" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="end"
+                                        android:textColor="@color/red"
+                                        android:textSize="@dimen/_13sdp"
+                                        android:text="*"
+                                        />
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_1sdp"
+                                        android:layout_below="@id/shop_name_TL"
+                                        android:layout_alignLeft="@+id/shop_name_TL"
+                                        android:layout_marginRight="@dimen/_2sdp"
+                                        android:background="#66000000"
+                                        android:layout_gravity="bottom"/>
+
+                                </FrameLayout>
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/_5sdp"
+                                android:background="@drawable/shape_cursor_two_button"
+                                android:backgroundTint="#F3F0F0"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:layout_marginBottom="@dimen/_3sdp">
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/rv_frag_add_quto_multi_cont"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+                            </LinearLayout>
 
                         </LinearLayout>
 
@@ -217,7 +300,7 @@
                                 android:textColorHint="@color/dark_gray"
                                 app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
 
-                                <com.tekfoods.widgets.AppCustomEditText
+                                <com.tekfoodsbreezefield.widgets.AppCustomEditText
                                     android:id="@+id/et_frag_add_quot_form_project_name"
                                     android:layout_width="match_parent"
                                     android:layout_height="@dimen/_30sdp"
@@ -237,7 +320,7 @@
 
                         </LinearLayout>
 
-                        <com.tekfoods.widgets.AppCustomTextView
+                        <com.tekfoodsbreezefield.widgets.AppCustomTextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Add Product"
@@ -268,7 +351,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content">
 
-                                <com.tekfoods.widgets.AppCustomTextView
+                                <com.tekfoodsbreezefield.widgets.AppCustomTextView
                                     android:id="@+id/tv_frag_add_quot_form_product"
                                     android:layout_width="match_parent"
                                     android:layout_height="@dimen/_30sdp"
@@ -317,7 +400,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content">
 
-                                <com.tekfoods.widgets.AppCustomTextView
+                                <com.tekfoodsbreezefield.widgets.AppCustomTextView
                                     android:id="@+id/tv_frag_add_quot_form_color"
                                     android:layout_width="match_parent"
                                     android:layout_height="@dimen/_30sdp"
@@ -376,7 +459,7 @@
                                 android:textColorHint="@color/dark_gray"
                                 app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
 
-                                <com.tekfoods.widgets.AppCustomEditText
+                                <com.tekfoodsbreezefield.widgets.AppCustomEditText
                                     android:id="@+id/et_frag_add_quot_form_sqft"
                                     android:layout_width="match_parent"
                                     android:layout_height="@dimen/_30sdp"
@@ -418,7 +501,7 @@
                                 android:textColorHint="@color/dark_gray"
                                 app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
 
-                                <com.tekfoods.widgets.AppCustomEditText
+                                <com.tekfoodsbreezefield.widgets.AppCustomEditText
                                     android:id="@+id/et_frag_add_quot_form_sqmrt"
                                     android:layout_width="match_parent"
                                     android:layout_height="@dimen/_30sdp"
@@ -461,7 +544,7 @@
                                 android:textColorHint="@color/dark_gray"
                                 app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
 
-                                <com.tekfoods.widgets.AppCustomEditText
+                                <com.tekfoodsbreezefield.widgets.AppCustomEditText
                                     android:id="@+id/et_frag_add_quot_form_qty"
                                     android:layout_width="match_parent"
                                     android:layout_height="@dimen/_30sdp"
@@ -504,7 +587,7 @@
                                 android:textColorHint="@color/dark_gray"
                                 app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
 
-                                <com.tekfoods.widgets.AppCustomEditText
+                                <com.tekfoodsbreezefield.widgets.AppCustomEditText
                                     android:id="@+id/et_frag_add_quot_form_amount"
                                     android:layout_width="match_parent"
                                     android:layout_height="@dimen/_30sdp"
@@ -556,7 +639,7 @@
                             android:layout_marginTop="@dimen/_5sdp"
                             android:orientation="vertical">
 
-                            <com.tekfoods.widgets.AppCustomTextView
+                            <com.tekfoodsbreezefield.widgets.AppCustomTextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="@dimen/_20sdp"
@@ -591,7 +674,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content">
 
-                                    <com.tekfoods.widgets.AppCustomTextView
+                                    <com.tekfoodsbreezefield.widgets.AppCustomTextView
                                         android:id="@+id/tv_frag_add_quot_form_taxes"
                                         android:layout_width="match_parent"
                                         android:layout_height="@dimen/_30sdp"
@@ -645,7 +728,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content">
 
-                                    <com.tekfoods.widgets.AppCustomTextView
+                                    <com.tekfoodsbreezefield.widgets.AppCustomTextView
                                         android:id="@+id/tv_frag_add_quot_form_freight"
                                         android:layout_width="match_parent"
                                         android:layout_height="@dimen/_30sdp"
@@ -701,7 +784,7 @@
                                     android:textColorHint="@color/dark_gray"
                                     app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
 
-                                    <com.tekfoods.widgets.AppCustomEditText
+                                    <com.tekfoodsbreezefield.widgets.AppCustomEditText
                                         android:id="@+id/et_frag_add_quot_form_del_time"
                                         android:layout_width="match_parent"
                                         android:layout_height="@dimen/_30sdp"
@@ -745,7 +828,7 @@
                                     android:textColorHint="@color/dark_gray"
                                     app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
 
-                                    <com.tekfoods.widgets.AppCustomEditText
+                                    <com.tekfoodsbreezefield.widgets.AppCustomEditText
                                         android:id="@+id/et_frag_add_quot_form_payment"
                                         android:layout_width="match_parent"
                                         android:layout_height="@dimen/_30sdp"
@@ -789,7 +872,7 @@
                                     android:textColorHint="@color/dark_gray"
                                     app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
 
-                                    <com.tekfoods.widgets.AppCustomEditText
+                                    <com.tekfoodsbreezefield.widgets.AppCustomEditText
                                         android:id="@+id/et_frag_add_quot_form_validity"
                                         android:layout_width="match_parent"
                                         android:layout_height="@dimen/_30sdp"
@@ -832,7 +915,7 @@
                                     android:textColorHint="@color/dark_gray"
                                     app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
 
-                                    <com.tekfoods.widgets.AppCustomEditText
+                                    <com.tekfoodsbreezefield.widgets.AppCustomEditText
                                         android:id="@+id/et_frag_add_quot_form_billing"
                                         android:layout_width="match_parent"
                                         android:layout_height="@dimen/_30sdp"
@@ -875,7 +958,7 @@
                                     android:textColorHint="@color/dark_gray"
                                     app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
 
-                                    <com.tekfoods.widgets.AppCustomEditText
+                                    <com.tekfoodsbreezefield.widgets.AppCustomEditText
                                         android:id="@+id/et_frag_add_quot_form_product_tolrence"
                                         android:layout_width="match_parent"
                                         android:layout_height="@dimen/_30sdp"
@@ -918,7 +1001,7 @@
                                     android:textColorHint="@color/dark_gray"
                                     app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
 
-                                    <com.tekfoods.widgets.AppCustomEditText
+                                    <com.tekfoodsbreezefield.widgets.AppCustomEditText
                                         android:id="@+id/et_frag_add_quot_form_coating_tolrence"
                                         android:layout_width="match_parent"
                                         android:layout_height="@dimen/_30sdp"
@@ -957,7 +1040,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content">
 
-                                    <com.tekfoods.widgets.AppCustomTextView
+                                    <com.tekfoodsbreezefield.widgets.AppCustomTextView
                                         android:id="@+id/tv_frag_add_quot_form_product_salemans"
                                         android:layout_width="match_parent"
                                         android:layout_height="@dimen/_30sdp"
@@ -969,7 +1052,6 @@
                                         android:paddingStart="@dimen/_10sdp"
                                         android:singleLine="true"
                                         android:textSize="@dimen/_11sdp"
-                                        android:drawableEnd="@drawable/ic_down_arrow"
                                         android:paddingEnd="@dimen/_10sdp"
                                         android:textColor="@color/black"
                                         app:theme="@style/EvoEditTextTheme" />
@@ -991,7 +1073,121 @@
 
                         </LinearLayout>
 
-                        <com.tekfoods.widgets.AppCustomTextView
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/_25sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:gravity="center_vertical"
+                                android:padding="@dimen/_4sdp"
+                                android:src="@drawable/ic_remarks_icon"
+                                app:tint="@color/dark_gray" />
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center_vertical"
+                                    android:textColorHint="@color/dark_gray"
+                                    app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+
+                                <com.tekfoodsbreezefield.widgets.AppCustomEditText
+                                    android:id="@+id/et_frag_add_quot_form_remarks"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_30sdp"
+                                    android:drawableTint="@color/black"
+                                    android:hint="Remarks"
+                                    android:maxLength="500"
+                                    android:imeOptions="actionNext"
+                                    android:gravity="center|start"
+                                    android:paddingStart="@dimen/_10sdp"
+                                    android:singleLine="true"
+                                    android:textSize="@dimen/_11sdp"
+                                    android:paddingEnd="@dimen/_10sdp"
+                                    android:textColor="@color/black"
+                                    app:theme="@style/EvoEditTextTheme" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_1sdp"
+                                    android:layout_below="@id/shop_name_TL"
+                                    android:layout_alignLeft="@+id/shop_name_TL"
+                                    android:layout_marginRight="@dimen/_2sdp"
+                                    android:background="#66000000"
+                                    android:visibility="gone"
+                                    android:layout_gravity="bottom"/>
+
+                            </FrameLayout>
+
+
+
+                        </LinearLayout>
+
+                        <!--Pdf Design use Template by saheli 09-01-2023-->
+
+                        <com.tekfoodsbreezefield.widgets.AppCustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Select Template"
+                            android:textStyle="bold"
+                            android:gravity="center|start"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp"
+                            android:background="@drawable/black_line_custom"
+                            android:layout_marginTop="@dimen/_15sdp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <RadioGroup
+                            android:id="@+id/rbg_frag_add_quot_form"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <RadioButton
+                                android:id="@+id/rb_frag_add_quot_form_generalTL"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|start"
+                                android:gravity="center|start"
+                                android:text="General Template"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_11sdp" />
+
+
+                            <RadioButton
+                                android:id="@+id/rb_frag_add_quot_form_govTL"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|start"
+                                android:gravity="center|start"
+                                android:text="Project Specification"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_11sdp" />
+
+                        </RadioGroup>
+
+
+                    </LinearLayout>
+
+                        <com.tekfoodsbreezefield.widgets.AppCustomTextView
                             android:id="@+id/btn_frag_add_quot_save_TV"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"

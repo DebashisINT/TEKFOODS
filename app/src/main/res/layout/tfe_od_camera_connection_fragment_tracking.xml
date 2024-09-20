@@ -17,12 +17,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.tekfoods.faceRec.customview.AutoFitTextureView
+    <com.tekfoodsbreezefield.faceRec.customview.AutoFitTextureView
         android:id="@+id/texture"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-    <com.tekfoods.faceRec.customview.OverlayView
+    <com.tekfoodsbreezefield.faceRec.customview.OverlayView
         android:id="@+id/tracking_overlay"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
